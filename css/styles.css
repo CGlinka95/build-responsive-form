@@ -64,12 +64,12 @@ fieldset > div {
     padding: 0.75rem;
 }
 
-.flex-container {
+.flex-container-2 {
     display: flex;
     flex-flow: wrap;
 }
 
-.flex-container > div {
+.flex-container-2 > div {
     flex: 0 1 50%;
     margin-bottom: 0.75rem;
 }
@@ -105,4 +105,23 @@ fieldset a {
 
 fieldset a:hover {
     color: var(--dk-green);
+}
+
+@media only screen and (min-width: 62.5rem) {
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-container > div {
+        flex: 0 1 50%;
+        margin-bottom: 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 90rem) {
+    section {
+        width: 90rem;
+        margin: auto;
+        margin-top: 5rem;
+    }
 }
